@@ -1,0 +1,85 @@
+{% extends 'index.html' %}
+{% block price %}
+              <h3>The Estimated Re-sell Price of the vehicle {{name}}</h3>
+<br><br><br><h1>${{price}}</h1><br><br><br><a type="button" href="/" class="btn btn-primary btn-lg">Evaluate another Vehicle</a>
+
+            </div>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+                  {% for val in vals %}
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-receipt"></i>
+
+<!--                  Here Is the start of my code-->
+
+                  <label><b>Color</b></label><br>
+                  <input type="text" value="{{val.0}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-cube-alt"></i>
+                  <label><b>Year Of Purchase</b></label><br>
+                  <input type="text" value="{{val.1}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-images"></i>
+                  <label><b>Vehicle Manufacturer</b></label><br>
+                  <input type="text" value="{{val.2}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <label><b>Vehicle Model</b></label><br>
+                  <input type="text" value="{{val.3}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <label><b>Engine Type</b></label><br>
+                  <input type="text" value="{{val.4}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <label><b>Wheel Drive</b></label><br>
+                  <input type="text" value="{{val.5}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <label><b>Vehicle Type</b></label><br>
+                  <input type="text" value="{{val.6}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <label><b>Transmission</b></label><br>
+                  <input type="text" value="{{val.7}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <label><b>Current Location</b></label><br>
+                  <input type="text" value="{{val.8}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <label><b>Current Condition</b></label><br>
+                  <input type="text" value="{{val.9}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <label><b>Fuel Type</b></label><br>
+                  <input type="text" value="{{val.10}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <label><b>Distance Traveled on Odometer</b></label><br>
+                  <input type="text" value="{{val.11}}" disabled>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <label><b>Title Status</b></label><br>
+                  <input type="text" value="{{val.12}}" disabled>
+                </div>
+              </div>
+              {% endfor %}
+            </div><!-- End .content-->
+          </div>
+        </div>
+              {% endblock %}
